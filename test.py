@@ -16,6 +16,15 @@ st.title("🎓 Scientific Visualization: Student Survey Analysis")
 st.markdown("---")
 
 # ------------------------------------------------------------
+# Load dataset from GitHub
+# ------------------------------------------------------------
+url = "https://raw.githubusercontent.com/nadiashahzanani/EC2024/refs/heads/main/arts_faculty_data.csv"
+arts_df = pd.read_csv(url)
+
+st.write("### Dataset Preview")
+st.dataframe(arts_df.head())
+
+# ------------------------------------------------------------
 # 1️⃣ Visualization 1: Gender Distribution (Plotly Donut Chart)
 # ------------------------------------------------------------
 st.header("1️⃣ Gender Distribution in Arts Faculty")
