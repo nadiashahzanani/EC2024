@@ -16,15 +16,6 @@ st.title("🎓 Scientific Visualization: Student Survey Analysis")
 st.markdown("---")
 
 # ------------------------------------------------------------
-# Load dataset from GitHub
-# ------------------------------------------------------------
-url = "https://raw.githubusercontent.com/nadiashahzanani/EC2024/refs/heads/main/arts_faculty_data.csv"
-arts_df = pd.read_csv(url)
-
-st.write("### Dataset Preview")
-st.dataframe(arts_df.head())
-
-# ------------------------------------------------------------
 # 1️⃣ Visualization 1: Gender Distribution (Plotly Donut Chart)
 # ------------------------------------------------------------
 st.header("1️⃣ Gender Distribution in Arts Faculty")
@@ -65,9 +56,8 @@ st.pyplot(fig2)
 
 st.markdown("""
 **Interpretation:**  
-This bar chart highlights the numerical difference between male and female students.  
-Such information helps institutions promote gender balance and diversity across academic programs.
-""")
+The majority of resondents are female students, making up about two-thirds of the total survey population. 
+This will indicates a higher participation rate among female students in feedback activities, possibly reflecting greater engagement or representation in the programs surveyed.""")
 
 # ------------------------------------------------------------
 # 3️⃣ Visualization 3: Comparison of Mean Scores (Q3 vs Q5)
@@ -92,9 +82,10 @@ st.pyplot(fig3)
 
 st.markdown("""
 **Interpretation:**  
-Students’ expectations regarding educational resources are slightly higher than the extent to which those expectations were met.  
-This indicates a small satisfaction gap, suggesting room for improvement in resource quality and management.
-""")
+The bar chart is compares students' expectations about the quality of universuty resources with how much their expectations were met. 
+The results show that the students rated their actual experience slightly higher than their initial expectations. 
+This means that the most students felt the quality of the university's resources was better that they had expected. 
+Overall, it suggests that the university is doing a good job in providing learning resources that meet or even exceed students' expectations.""")
 
 # ------------------------------------------------------------
 # 4️⃣ Visualization 4: Best Aspect of the Program (Pie Chart)
@@ -112,8 +103,7 @@ st.pyplot(fig4)
 st.markdown("""
 **Interpretation:**  
 The majority of students identified “Teaching/Learning” as the best aspect of their program.  
-This reflects strong satisfaction with instructional quality and lecturer engagement in the Arts faculty.
-""")
+This will reveals that the instructional quality is the main strength of the university, to emphasizing the effective academic delivery and supportive teaching staff.""")
 
 # ------------------------------------------------------------
 # 5️⃣ Visualization 5: Aspects to Improve (Horizontal Bar Chart)
@@ -132,9 +122,8 @@ st.pyplot(fig5)
 
 st.markdown("""
 **Interpretation:**  
-Students most frequently suggested improvements in “Teaching Methods” and “Learning Environment.”  
-This feedback helps administrators focus on enhancing classroom interactivity and instructional design.
-""")
+Students most frequently suggested improvements in “Teaching Methods” and “Learning Environment followed by the Facilities and Environment."
+This also will aligns with the student' earlier responses that showing slightly lower satisfaction with practical and infrastructural resources, which it highlighting the key focus areas for university development.""")
 
 # ------------------------------------------------------------
 # 6️⃣ Visualization 6: Expectation Met Scores by Academic Year (Box Plot)
@@ -156,12 +145,6 @@ st.pyplot(fig6)
 
 st.markdown("""
 **Interpretation:**  
-The box plot reveals how satisfaction levels vary across academic years.  
-Senior students tend to report slightly lower satisfaction, indicating evolving expectations as they progress through the program.
-""")
-
-# ------------------------------------------------------------
-# Footer
-# ------------------------------------------------------------
-st.markdown("---")
-st.markdown("👩‍💻 *Created by Nadia Shahzanani — Streamlit Visualization App for Student Survey Data (2025)*")
+The box plot shows that second-year students are generally the most satisfied, with their expectations being met more than other groups. 
+First-year students have the lowest satisfaction levels, while third- and fourth-year students fall somewhere in between. 
+This suggests that students might feel more positive about their experience after settling into university life, but satisfaction tends to balance out as they progress through later years.""")
